@@ -1,11 +1,71 @@
 .contact {
     display: flex;
-    border: 1px solid red;
 
     .info {
-        border: 1px solid blue;
         width: 100%;
         padding: 10px;
+        background: rgb(233, 233, 233);
+        position: relative;
+
+        .contact-label {
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 0 10px 0;
+
+            .actual, .desc {
+                font-weight: normal;
+                padding-left: 20px;
+            }
+            .email {
+                color: blue;
+                cursor: pointer;
+            }
+        }
+
+        .external-links {
+            display: flex;
+            justify-content: space-evenly;
+            // position: absolute;
+            // bottom: 0;
+            padding-bottom: 75px;
+            width: 100%;
+
+            a {
+                color: white;
+                text-decoration: none;
+
+                .link {
+                    width: 100px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    font-size: 16px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    box-shadow: 5px 5px #888888;
+                    cursor: pointer;
+                }
+                .github {
+                    background: blue;
+    
+                    &:hover {
+                        background: rgb(73, 73, 250);
+                    }
+                    &:active {
+                        transform: translateY(2px);
+                    }
+                }
+                .linkedin {
+                    background: red;
+    
+                    &:hover {
+                        background: rgb(248, 81, 81);
+                    }
+                    &:active {
+                        transform: translateY(2px);
+                    }
+                }}
+        }
     }
 }
 @media screen and (max-width: 1000px) {
@@ -13,8 +73,12 @@
         display: flex;
         flex-direction: column;
 
-        .resume {order: 2}
-        .info {order: 1}
+        .resume {
+            order: 2;
+            text-align: center;
+            margin: auto;
+        }
+        .info {order: 1;}
     }
 }
 @media screen and (max-width: 580px) {

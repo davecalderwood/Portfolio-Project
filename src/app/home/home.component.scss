@@ -10,9 +10,34 @@
         background: rgb(225, 224, 224);
         margin-top: 50px;
         border-radius: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .job-title {
+            width: 90%;
+            margin: auto;
+            text-align: right;
+            font-size: 30px;
+            color: rgb(201, 3, 3);
+            height: 100%;
+
+            .current {
+                color: black;
+                font-size: 20px;
+                padding-right: 20px;
+            }
+
+            .my-work {
+                padding-left: 20px;
+                width: 80%;
+                text-align: left;
+                color: black;
+                font-size: 18px;
+            }
+        }
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .home {
         flex-direction: column;
 
@@ -20,7 +45,11 @@
             margin: 0;
             order: 2;
         }
-        img {order: 1}
+        img {
+            order: 1;
+            text-align: center;
+            margin: auto;
+        }
     }
 }
 @media screen and (max-width: 450px) {
