@@ -15,6 +15,7 @@
             .actual, .desc {
                 font-weight: normal;
                 padding-left: 20px;
+                padding-top: 10px;
             }
             .email {
                 color: blue;
@@ -64,7 +65,18 @@
                     &:active {
                         transform: translateY(2px);
                     }
-                }}
+                }
+                .facebook {
+                    background: green;
+    
+                    &:hover {
+                        background: rgb(77, 128, 77);
+                    }
+                    &:active {
+                        transform: translateY(2px);
+                    }
+                }
+            }
         }
     }
 }
