@@ -12,3 +12,21 @@
         border-radius: 25px;
     }
 }
+@media screen and (max-width: 900px) {
+    .home {
+        flex-direction: column;
+
+        .desc {
+            margin: 0;
+            order: 2;
+        }
+        img {order: 1}
+    }
+}
+@media screen and (max-width: 450px) {
+    .home {
+        img {
+            width: 100%;
+        }
+    }
+}
